@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 /*
- * Name:
- * Date:
- * StudentID:
- * Description:
- * Version:
+ * Name: Simarpreet Kaur
+ * Date: August 17,2017
+ * StudentID: 300927812
+ * Description: Modified
+ * Version: 0.2 
  */
 
 namespace COMP123_S2017_FinalExam_300927812
@@ -29,7 +29,7 @@ namespace COMP123_S2017_FinalExam_300927812
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
-        Scoreboard _scoreboard;
+        private Scoreboard _scoreboard;
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public List<PictureBox> DealtCardPictureBoxList
@@ -112,6 +112,18 @@ namespace COMP123_S2017_FinalExam_300927812
                 this._maximumPoints = value;
             }
         }
+        public ScoreBoard ScoreBoard
+        {
+            get
+            {
+                return _scoreboard;
+            }
+            set
+            {
+                _scoreboard = value;
+            }
+        }
+
 
         // CONSTRUCTORS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public PickHighestCardForm()
@@ -359,7 +371,7 @@ namespace COMP123_S2017_FinalExam_300927812
         /// <param name="e"></param>
         private void CountDownTimer_Tick(object sender, EventArgs e)
         {
-            /* Uncomment THIS
+          
             ScoreBoard.UpdateTime();
             if (ScoreBoard.Time == 0)
             {
@@ -368,7 +380,7 @@ namespace COMP123_S2017_FinalExam_300927812
                 this._disableDealtCards();
                 this._showFinalScore();
             }
-            */
+            
         }
 
         /// <summary>
