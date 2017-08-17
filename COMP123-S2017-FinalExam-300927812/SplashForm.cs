@@ -23,7 +23,7 @@ namespace COMP123_S2017_FinalExam_300927812
             pickHighestCardForm.Show();
             this.Hide();
 
-            SplashForm.Enabled = false;
+            SplashFormTimer.Enabled = false;
 
 
         }
