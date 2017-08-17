@@ -29,6 +29,7 @@ namespace COMP123_S2017_FinalExam_300927812
         Deck _deck;
         Hand _hand;
         int _maximumPoints;
+        Scoreboard _scoreboard;
 
         // PUBLIC PROPERTIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public List<PictureBox> DealtCardPictureBoxList

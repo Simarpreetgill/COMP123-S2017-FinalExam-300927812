@@ -7,9 +7,9 @@ using System.Windows.Forms;
 /*
  * Name:Simarpreet Kaur
  * Date: August 17,2017
- * StudentID:
- * Description:
- * Version:
+ * StudentID: 300927812
+ * Description: Program class modified
+ * Version: 0.1
  */
 
 namespace COMP123_S2017_FinalExam_300927812
@@ -25,6 +25,9 @@ namespace COMP123_S2017_FinalExam_300927812
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new PickHighestCardForm());
+
+            Application.Run(new SplashForm());
         }
+    
     }
 }

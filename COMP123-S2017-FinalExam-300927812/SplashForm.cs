@@ -16,5 +16,19 @@ namespace COMP123_S2017_FinalExam_300927812
         {
             InitializeComponent();
         }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            PickHighestCardForm pickHighestCardForm = new PickHighestCardForm();
+            pickHighestCardForm.Show();
+            this.Hide();
+
+            SplashForm.Enabled = false;
+
+
+        }
     }
+  
+    
+
 }
